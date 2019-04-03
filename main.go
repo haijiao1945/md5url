@@ -2,7 +2,7 @@ package main
 
 import (
 	"github.com/gin-gonic/gin"
-	C "github.com/haijiao1945/shorturl/controllers"
+	C "github.com/haijiao1945/md5url/controllers"
 )
 
 func setupRouter() *gin.Engine {
