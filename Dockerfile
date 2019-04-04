@@ -10,11 +10,11 @@ RUN gopm get -g github.com/ugorji/go/codec
 RUN gopm get -g gopkg.in/go-playground/validator.v8
 RUN gopm get -g gopkg.in/yaml.v2
 
-RUN mkdir /data
-RUN mkdir /data/www
-RUN mkdir /data/www/md5url
-WORKDIR /data/www/md5url
-ADD . /data/www/md5url
+RUN mkdir /usr/local/go/src/github.com
+RUN mkdir /usr/local/go/src/github.com/haijiao1945
+RUN mkdir /usr/local/go/src/github.com/haijiao1945/md5url
+WORKDIR /usr/local/go/src/github.com/haijiao1945/md5url
+ADD . /usr/local/go/src/github.com/haijiao1945/md5url
 
 RUN go build .
 
